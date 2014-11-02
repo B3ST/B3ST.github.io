@@ -595,10 +595,6 @@ a small {
   display: block;
 }
 
-ul {
-  list-style-image: url("../images/bullet.png");
-}
-
 strong {
   font-family: 'OpenSansBold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: normal;
@@ -873,7 +869,7 @@ header.main {
   text-align: center;
   background-color: #f0e7d5;
   padding: 40px 0 10px;
-  margin: 0 auto 20px;
+  margin: 0 auto 30px;
 }
 
 header.main a,
@@ -909,7 +905,7 @@ header .brand .name {
 }
 
 footer.main {
-  border-top: 1px dotted #ffcc00;
+  border-top: 1px dotted #ffeb9b;
   padding: 40px 0 20px;
   margin: 40px auto 0;
   font-size: 12px;
@@ -927,6 +923,10 @@ footer.main .credits {
 footer.main .colophon {
   float: right;
   width: 35%;
+}
+
+.clearfix {
+  clear: both;
 }
 
 footer.main .colophon div {
@@ -953,7 +953,6 @@ footer.main .fork {
   footer.main .credits ul,
   footer.main .colophon ul {
     list-style: none;
-    list-style-image: none;
     list-style-type: none;
     padding: 0;
   }
@@ -970,7 +969,6 @@ footer.main .fork {
   footer.main .credits ul,
   footer.main .colophon ul {
     list-style: none;
-    list-style-image: none;
     list-style-type: none;
     padding: 0;
   }
