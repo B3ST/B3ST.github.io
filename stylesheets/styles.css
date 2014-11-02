@@ -390,7 +390,7 @@ fieldset {
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3 
+ * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
 legend {
@@ -847,5 +847,131 @@ section #title .credits.right {
 
   nav {
     display: none;
+  }
+}
+
+/**
+ * B3 customizations.
+ */
+
+.wrapper {
+  max-width: 650px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 40px;
+}
+
+nav.main .wrapper {
+  padding: 20px;
+}
+
+nav.main li {
+  text-align: center;
+}
+
+header.main {
+  text-align: center;
+  background-color: #f0e7d5;
+  padding: 40px 0 10px;
+  margin: 0 auto 20px;
+}
+
+header.main a,
+header.main a:hover {
+  color: #000;
+}
+
+article header {
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+header .brand .logo,
+header .brand .name,
+header .brand .description {
+  display: block;
+  margin: 0 auto;
+}
+
+header .brand .name {
+  margin-top: 20px;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.home header .brand .description {
+  display: none;
+}
+
+.home .intro {
+  font-size: 125%;
+  text-align: center;
+}
+
+footer.main {
+  border-top: 1px dotted #ffcc00;
+  padding: 40px 0 20px;
+  margin: 40px auto 0;
+  font-size: 12px;
+}
+
+footer.main h1 {
+  font-size: 18px;
+}
+
+footer.main .credits {
+  float: left;
+  width: 65%;
+}
+
+footer.main .colophon {
+  float: right;
+  width: 35%;
+}
+
+footer.main .colophon div {
+  margin: 0 0 10px;
+}
+
+footer.main .fork {
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.home footer.main .fork {
+  display: none;
+}
+
+@media print, screen and (max-width: 720px) {
+  footer.main .credits,
+  footer.main .colophon {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer.main .credits ul,
+  footer.main .colophon ul {
+    list-style: none;
+    list-style-image: none;
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  footer.main .credits,
+  footer.main .colophon {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer.main .credits ul,
+  footer.main .colophon ul {
+    list-style: none;
+    list-style-image: none;
+    list-style-type: none;
+    padding: 0;
   }
 }

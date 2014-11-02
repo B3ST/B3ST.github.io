@@ -1,0 +1,29 @@
+<footer id="credits" class="main">
+  <div class="wrapper">
+
+    <div class="fork"><a href="https://github.com/B3ST">Join the project on GitHub.</a></div>
+
+    <div class="credits">
+      <h1>Credits</h1>
+      <ul>
+        {% for member in site.data.members %}
+          <li>{{ member.name }} (<a href="https://github.com/{{ member.github }}" class="user-mention">@{{ member.github }}</a>)</li>
+        {% endfor %}
+        <li class="design-logo">Project logo by <a href="http://marianatavares.tumblr.com">Mariana Tavares</a>.</li>
+      </ul>
+
+      <h1>Sponsor</h1>
+      <ul>
+        {% for sponsor in site.data.sponsors %}
+          <li><a href="{{ sponsor.url }}" class="user-mention">{{ sponsor.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="colophon">
+      <div class="site">Hosted on GitHub Pages.</div>
+      <div class="license">B3 is available under an <a href="http://opensource.org/licenses/MIT">MIT License</a>.</div>
+      <div class="pdo">Assembled in Portugal.</div>
+    </div>
+  </div>
+</footer>

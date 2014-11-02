@@ -4,4 +4,4 @@ This repository contains the Github page sources for the B3 project.
 
 B3 logo by [Mariana Tavares](http://marianarute.tumblr.com).
 
-Based on a theme by [Matt Graham](https://twitter.com/michigangraham).
+Layout based on a theme by [Matt Graham](https://twitter.com/michigangraham).

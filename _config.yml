@@ -1,0 +1,28 @@
+exclude:
+  - beebeebee.be.sublime-project
+  - beebeebee.be.sublime-workspace
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "docs"
+      type: "pages"
+    values:
+      layout: "documentation"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
