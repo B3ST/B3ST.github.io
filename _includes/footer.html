@@ -4,7 +4,7 @@
     <div class="fork"><a href="https://github.com/B3ST">Join the project on GitHub.</a></div>
 
     <div class="credits">
-      <h1>Credits</h1>
+      <h1>Team</h1>
       <ul>
         {% for member in site.data.members %}
           <li>{{ member.name }} (<a href="https://github.com/{{ member.github }}" class="user-mention">@{{ member.github }}</a>)</li>
@@ -24,6 +24,8 @@
       <div class="site">Hosted on GitHub Pages.</div>
       <div class="license">B3 is available under an <a href="http://opensource.org/licenses/MIT">MIT License</a>.</div>
       <div class="pdo">Assembled in Portugal.</div>
+
+      {% include facebook.html %}
     </div>
 
     <div class="clearfix"></div>
