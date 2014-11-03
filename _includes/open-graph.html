@@ -1,0 +1,25 @@
+{% if page.title %}
+<meta property="og:title" content="{{ page.title }}">
+{% if page.description %}
+	<meta name="description" content="{{ page.description }}">
+	<meta name="og:description" content="{{ page.description }}">
+{% else if content %}
+	<meta name="description" content="{{ content | strip_html | truncatewords: 25 }}">
+	<meta name="og:description" content="{{ content | strip_html | truncatewords: 25 }}">
+{% endif %}
+{% else %}
+<meta name="description" content="B3 -- A JavaScript Starter Theme for WordPress">
+{% endif %}
+
+{% if page.og_image_url %}
+<meta property="og:image" content="{{ page.og_image_url }}">
+{% else %}
+{% if page.photo_url %}
+	<meta property="og:image" content="{{ page.photo_url }}">
+{% endif %}
+{% endif %}
+
+<meta property="og:url" content="http://beebeebee.be{{ page.url | remove_first:'index.html' }}">
+<meta property="og:site_name" content="beebeebee.be">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US" />
